@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2 Skills Test</title>
+
+     <style>
+    body {
+       font-style: italic;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      text-align: center;
+      padding: 30px;
+    }
+
+
+    .card {
+      background-color: #e9e08e;
+      border-radius: 25px;
+      padding: 30px;
+      width: 350px;
+      margin: 0 auto;
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #3d3429;
+      margin-bottom: 25px;
+    }
+
+    .label-text {
+      color: #3e372b;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+         input[type="text"] {
+      width: 80%;
+      padding: 8px 12px;
+      border-radius: 15px;
+      border: none;
+      font-size: 1rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    button {
+      background-color: #8c5e3c;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 15px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+
+    .result-box {
+      background-color: white;
+      border-radius: 20px;
+      padding: 15px;
+      min-height: 40px;
+      color: #333;
+      font-size: 0.95rem;
+    }
+
+    #output1 {
+        background-color: #FFFDF8;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <h1 style="font-style: italic;">Non-Metal Element Finder</h1>
+
+
+    <div class="card">
+        <div class="card-title">Periodic Table Element Finder</div>
+
+    <div class="label-text">Enter Element Symbol:</div>
+         <input type="text" id="symbolInput" placeholder="e.g. H, C, O">
+
+    <br>
+      <button type="button" py-click="checkElement">Check</button>
+
+
+    <div id="resultDisplay" class="result-box">
+      Results will appear here.
+    </div>
+  </div>
+
+    <div id="output1"></div>
+    <script type="py" src="main.py"></script>
+
+</div>
+</body>
+</html>
